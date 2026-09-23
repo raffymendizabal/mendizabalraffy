@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin, Border and Padding</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Georgia, serif;
+        }
+
+        /* Outer purple box */
+        .margin {
+            background-color: purple;
+            margin: 30px;
+            padding: 40px;
+            height: 590px;
+            position: relative;
+        }
+
+        /* Blue box */
+        .border {
+            background-color: blue;
+            padding: 40px;
+            height: 510px;
+            position: relative;
+        }
+
+        /* Red content boxes */
+        .content {
+            background-color: red;
+            color: white;
+            height: 150px;
+            padding: 20px 40px;
+            font-size: 55px;
+            margin-bottom: 70px;
+        }
+
+        /* Yellow text */
+        .yellow-text {
+            color: yellow;
+            font-size: 60px;
+            margin: 0 0 0 0;
+        }
+
+        /* Blue arrows */
+        .arrow {
+            position: absolute;
+            color: #20baff;
+            font-family: Arial, sans-serif;
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        .top-arrow {
+            top: 0;
+            left: 150px;
+        }
+
+        .left-arrow {
+            top: 470px;
+            left: -10px;
+        }
+
+        .right-arrow {
+            top: 280px;
+            right: -10px;
+        }
+
+        .bottom-arrow {
+            bottom: -10px;
+            left: 150px;
+        }
+
+        /* Description */
+        .description {
+            color: #20aaff;
+            font-family: cursive;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="margin">
+
+        <div class="arrow top-arrow">↕</div>
+        <div class="arrow left-arrow">↔</div>
+        <div class="arrow right-arrow">↔</div>
+        <div class="arrow bottom-arrow">↕</div>
+
+        <div class="border">
+
+            <h1 class="yellow-text">Yellow Text</h1>
+
+            <div class="content">
+                White Text
+            </div>
+
+            <h1 class="yellow-text">Yellow Text</h1>
+
+            <div class="content">
+                White Text
+            </div>
+
+        </div>
+    </div>
+
+    <p class="description">
+        Lorem ipsum is just padding on 4 sides.
+    </p>
+
+</body>
+</html>
